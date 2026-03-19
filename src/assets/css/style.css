@@ -187,3 +187,141 @@ header {
     font-size: 15px;
     font-family: 'Barlow Condensed';
 }
+
+.produtos {
+    padding: 64px 120px;
+    width: 100%;
+}
+
+.produtos h2 {
+    color: #F0F0F0;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.produtos-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.produtos-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #111111;
+    color: white;
+    border-radius: 8px;
+    font-size: 18px;
+    font-family: 'Syne', sans-serif;
+    gap: 7px;
+    transition: 0.3s;
+}
+
+.produtos-card button {
+    border: 0;
+    background-color: #00ff88;
+    padding: 10px;
+    color: #0A0A0A;
+    font-family: 'Rajdhani';
+    font-weight: 500;
+    transition: 0.3s;
+    border-radius: 6px;
+}
+
+.produtos-card span {
+    color: #888888;
+}
+
+.produtos-card button:hover {
+    cursor: pointer;
+    background-color: white;
+    box-shadow: 0 0 20px #00ff88;
+}
+
+
+.produtos-card img {
+    transition: 0.3s;
+    border-radius: 8px;
+}
+
+.produtos-card img:hover {
+    transform: scale(1.05);
+    border: 1px solid #00FF87;
+}
+
+.ofertas {
+    display: flex;
+    flex-direction: column;
+    padding: 64px 120px;
+    color: #F0F0F0;
+    font-family: 'Rajdhani';
+    width: 100%;
+}
+
+.ofertas-grid {
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+}
+
+.ofertas-relamp {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1000px;
+    height: 100px;
+    border: 1px solid #00ff8733;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #0d1a0f, #111111);
+}
+
+.conteudo-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+}
+
+.ofertas h2 {
+    font-family: 'Syne', sans-serif;
+}
+
+.ofertas-relamp span {
+    color: #00ff88;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.contador {
+    display: flex;
+    align-items: center ;
+    gap: 8px;
+    padding-right: 10px;
+}
+
+.ctd-box {
+    background: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    border-radius: 6px;
+    padding: 8px 12px;
+    text-align: center;
+    min-width: 48px;
+}
+
+.numero {
+    font-size: 20px;
+    font-weight: 500;
+    color: #00ff87;
+    font-family: monospace;
+}
+
+.ctd-texto {
+    font-size: 9px;
+    color: #555;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    margin-top: 3px;
+}

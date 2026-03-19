@@ -15,6 +15,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="src/assets/css/style.css">
+    <script src="src/assets/js/script.js"></script>
     <title>HS GAMING</title>
 </head>
 
@@ -26,11 +27,11 @@
             <p>Real performance</p>
         </div>
         <nav class="nav">
-            <li><a href="#">Produtos</a></li>
-            <li><a href="#">Categorias</a></li>
-            <li><a href="#">Ofertas</a></li>
+            <li><a href="#categoria">Categorias</a></li>
+            <li><a href="#produtos">Produtos</a></li>
+            <li><a href="#ofertas">Ofertas</a></li>
             <li><a href="#">Contato</a></li>
-            <a href=""><button>Comprar</button></a>
+            <a href="#"><button>Comprar</button></a>
         </nav>
     </header>
 
@@ -38,7 +39,7 @@
         <div class="conteudo-principal">
             <h1>A qualidade <br> que muda o <span>jogo</span></h1> <br>
             <p>Performance, velocidade e estilo no seu setup</p> <br>
-            <a href="#"><button>Ver produtos</button></a>
+            <a href="#produtos"><button>Ver produtos</button></a>
         </div>
     </section>
 
@@ -88,6 +89,65 @@
             </div>
         </div>
 
+    </section>
+
+    <section class="produtos" id="produtos">
+        <h2>Produtos</h2>
+        <div class="produtos-grid">
+            <div class="produtos-card">
+                <img height="200" width="200" src="src/assets/images/mouse.png" alt="Mouse HS">
+                <p>HS MACHINE</p>
+                <span>R$290,99</span>
+                <button>Comprar</button>
+            </div>
+            <div class="produtos-card">
+                <img height="200" width="200" src="src/assets/images/teclado.png" alt="Teclado HS">
+                <p>HS Learning</p>
+                <span>R$359,99</span>
+                <button>Comprar</button>
+            </div>
+            <div class="produtos-card">
+                <img height="200" width="200" src="src/assets/images/fone.png" alt="Fone HS">
+                <p>HS A75</p>
+                <span>R$340,49</span>
+                <button>Comprar</button>
+            </div>
+            <div class="produtos-card">
+                <img height="200" width="200" src="src/assets/images/monitor.png" alt="Mouse HS">
+                <p>HS FAZER 144HZ</p>
+                <span>R$1240,40</span>
+                <button>Comprar</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="ofertas" id="ofertas">
+        <h1>
+            Confira Nossas Ofertas Do dia
+        </h1>
+
+        <div class="ofertas-grid">
+            <div class="ofertas-relamp">
+                <div class="conteudo-2"> 
+                    <span>⚡ Oferta relâmpago</span>
+                    <h2>até 40% off hoje</h2>
+                </div>
+                <div class="contador">
+                    <div class="ctd-box">
+                        <div class="numero" id="horas">08</div>
+                        <div class="ctd-texto">horas</div>
+                    </div>
+                    <div class="ctd-box">
+                        <div class="numero" id="minutos">00</div>
+                        <div class="ctd-texto">min</div>
+                    </div>
+                    <div class="ctd-box">
+                        <div class="numero" id="horas">00</div>
+                        <div class="ctd-texto">seg</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
 </body>
