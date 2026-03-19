@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0A0A0A;
+}
+
+header {
+    background-color: #111111;
+    border-bottom: 1px solid #007A40;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    height: 120px;
+}
+
+
+.logo-texto {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #00FF87;
+    text-decoration: none;
+}
+
+.logo {
+    font-family: 'Syne';
+    font-size: 12px;
+    color: #888888;
+}
+
+.header span {
+    color: #00ff88;
+}
+
+.nav {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #888888;
+    font-family: 'Barlow Condensed', sans-serif;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    color: #00FF87;
+}
+
+.nav button {
+    border: 0;
+    border-radius: 6px;
+    box-shadow: 0 0 10px #00ff885e;
+    transition: 0.3s;
+    cursor: pointer;
+    background-color: #00FF87;
+    padding: 10px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 16px;
+}
+
+.nav button:hover {
+    background-color: white;
+    box-shadow: 0 0 20px #00ff88;
+    transform: scale(1.05);
+}
+
+.principal {
+    padding-top: 80px;
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+        url(/src/assets/images/pexels-wesley-woodard-177495-572665.jpg) center/cover no-repeat;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    border-bottom: 1px solid #007A40;
+}
+
+.conteudo-principal {
+    margin-right: 500px;
+}
+
+.principal h1 {
+    color: #F0F0F0;
+    text-align: left;
+    font-size: 64px;
+    font-weight: 700;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.principal span {
+    color: #00FF87;
+    text-transform: uppercase;
+}
+
+.principal p {
+    color: #888888;
+    font-size: 18px;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.principal button {
+    border: 0;
+    border-radius: 6px;
+    box-shadow: 0 0 10px #00ff885e;
+    transition: 0.3s;
+    cursor: pointer;
+    background-color: #00FF87;
+    padding: 10px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 16px;
+}
+
+.principal button:hover {
+    background-color: white;
+    box-shadow: 0 0 20px #00ff88;
+    transform: scale(1.05);
+}
+
+.categorias {
+    display: flex;
+    flex-direction: column;
+    padding: 64px 120px;
+}
+
+.explorar {
+    color: #00ff88;
+    text-transform: uppercase;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 16px;
+    font: bold;
+
+}
+
+.segundo-titulo {
+    color: #F0F0F0;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.categorias-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.categoria-card {
+    cursor: pointer;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #111111;
+    border-radius: 8px;
+    gap: 5px;
+    transition: 0.3s;
+}
+
+.categoria-card:hover {
+    transform: scale(1.05);
+    border: 1px solid #00FF87;
+}
+
+.categoria-card p {
+    font-size: 18px;
+    font-family: 'Syne', sans-serif;
+}
+
+.categoria-card span {
+    color: #888888;
+    font-size: 15px;
+    font-family: 'Barlow Condensed';
+}
