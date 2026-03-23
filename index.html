@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="src/assets/css/style.css">
     <link rel="shortcut icon" href="src/assets/images/Arrowai-removebg-preview.png" type="image/x-icon">
-    <script src="src/assets/js/script.js"></script>
+    <script src="src/assets/js/script.js" defer></script>
     <title>HS GAMING</title>
 </head>
 
@@ -31,10 +31,28 @@
             <li><a href="#categoria">Categorias</a></li>
             <li><a href="#produtos">Produtos</a></li>
             <li><a href="#ofertas">Ofertas</a></li>
-            <li><a href="#">Contato</a></li>
-            <a href="#"><button>Comprar</button></a>
+            <li><a href="#contato">Contato</a></li>
+            <a href="#"><button onclick="comprar()">Comprar</button></a>
         </nav>
+
+        <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
     </header>
+
+    <div class="overlay" id="overlay"></div>
+
+    <nav class="nav-mobile" id="navMobile" aria-hidden="true">
+        <li><a href="#categoria" class="link-mobile">Categorias</a></li>
+        <li><a href="#produtos" class="link-mobile">Produtos</a></li>
+        <li><a href="#ofertas" class="link-mobile">Ofertas</a></li>
+        <li><a href="#contato" class="link-mobile">Contato</a></li>
+        <div class="btn-mobile">
+            <a href="#"><button style="color: white;">Comprar agora</button></a>
+        </div>
+    </nav>
 
     <section class="principal">
         <div class="conteudo-principal">
@@ -85,7 +103,7 @@
             </div>
             <div class="categoria-card">
                 <i class="fa-solid fa-lightbulb"></i>
-                <p>RGB/iluminação</p>
+                <p>RGB</p>
                 <span>34 produtos</span>
             </div>
         </div>
@@ -96,28 +114,28 @@
         <h2>Produtos</h2>
         <div class="produtos-grid">
             <div class="produtos-card">
-                <img height="200" width="200" src="src/assets/images/mouse.png" alt="Mouse HS">
+                <img  src="src/assets/images/mouse.png" alt="Mouse HS">
                 <p>HS MACHINE</p>
                 <span>R$290,99</span>
-                <button>Comprar</button>
+                <button onclick="comprar()">Comprar</button>
             </div>
             <div class="produtos-card">
-                <img height="200" width="200" src="src/assets/images/teclado.png" alt="Teclado HS">
+                <img src="src/assets/images/teclado.png" alt="Teclado HS">
                 <p>HS Learning</p>
                 <span>R$359,99</span>
-                <button>Comprar</button>
+                <button onclick="comprar()">Comprar</button>
             </div>
             <div class="produtos-card">
-                <img height="200" width="200" src="src/assets/images/fone.png" alt="Fone HS">
+                <img src="src/assets/images/fone.png" alt="Fone HS">
                 <p>HS A75</p>
                 <span>R$340,49</span>
-                <button>Comprar</button>
+                <button onclick="comprar()">Comprar</button>
             </div>
             <div class="produtos-card">
-                <img height="200" width="200" src="src/assets/images/monitor.png" alt="Mouse HS">
+                <img src="src/assets/images/monitor.png" alt="Mouse HS">
                 <p>HS FAZER 144HZ</p>
                 <span>R$1240,40</span>
-                <button>Comprar</button>
+                <button onclick="comprar()">Comprar</button>
             </div>
         </div>
     </section>
@@ -143,7 +161,7 @@
                         <div class="ctd-texto">min</div>
                     </div>
                     <div class="ctd-box">
-                        <div class="numero" id="horas">00</div>
+                        <div class="numero" id="segundos">00</div>
                         <div class="ctd-texto">seg</div>
                     </div>
                 </div>
@@ -159,7 +177,7 @@
                         <span class="novo-preco">R$195</span>
                         <span class="desconto">-33%</span>
                     </div>
-                    <button class="btn-comprar">Comprar</button>
+                    <button class="btn-comprar" onclick="comprar()">Comprar</button>
                 </div>
                 <div class="ofertas-card">
                     <div class="imagem-grid">
@@ -171,7 +189,7 @@
                         <span class="novo-preco">R$305</span>
                         <span class="desconto">-15%</span>
                     </div>
-                    <button class="btn-comprar">Comprar</button>
+                    <button class="btn-comprar" onclick="comprar()">Comprar</button>
                 </div>
                 <div class="ofertas-card">
                     <div class="imagem-grid">
@@ -183,15 +201,12 @@
                         <span class="novo-preco">R$272</span>
                         <span class="desconto">-20%</span>
                     </div>
-                    <button class="btn-comprar">Comprar</button>
+                    <button class="btn-comprar" onclick="comprar()">Comprar</button>
                 </div>
             </div>
         </div>
     </section>
-
-    Baseado na sua estrutura, aqui está o HTML completo com as 4 colunas e o CSS:
-    HTML — adiciona as colunas que faltam:
-    html<footer>
+    <footer id="contato">
         <div class="footer-grid">
 
             <div class="footer-cards">
