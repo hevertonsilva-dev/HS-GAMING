@@ -53,6 +53,6 @@ Este projeto foi desenvolvido com o objetivo de praticar e demonstrar habilidade
 
 ## 👨‍💻 Autor
 
-Desenvolvido Heverton.
+Desenvolvido Por Heverton.
 
 ---
